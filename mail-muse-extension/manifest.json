@@ -1,0 +1,32 @@
+{
+  "name": "Mail Muse - AI Email Assistant",
+  "description": "A Chrome extension to enhance your email experience with AI.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:8080/*",
+    "https://mail.google.com/*",
+    "https://outlook.live.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*", "https://outlook.live.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["https://mail.google.com/*", "https://outlook.live.com/*"]
+    }
+  ],
+  "action": {
+    "default_title": "Mail Muse - AI Email Assistant"
+    }
+}
