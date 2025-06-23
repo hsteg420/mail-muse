@@ -25,14 +25,6 @@ The extension can capture the content of an email you're replying to, send it to
 - Testing the AI responses using Postman
 
 ---
+<img width="1470" alt="Screenshot 2025-06-23 at 23 54 08" src="https://github.com/user-attachments/assets/07996e23-1c40-4bc2-9e75-b1cf3f6bbc76" />
 
-## Tech Stack
-
-| Tech         | Description                     |
-|--------------|---------------------------------|
-| Spring Boot  | Java backend framework          |
-| Spring AI    | Abstraction over LLM providers  |
-| OpenAI API   | Language generation             |
-| Maven        | Dependency management           |
-| Java 17+     | Modern Java features            |
 
